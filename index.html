@@ -11,14 +11,14 @@
   <body>
     <div class="form">
     <h1 id="title">Anime Preferences Survey</h1>
-    <p>Share your anime preferences with us to help us better understand your tastes.</p>
+    <p id="description">Share your anime preferences with us to help us better understand your tastes.</p>
     <!-- Form Section -->
-    <form method="post" action='https://anime-servey.org'> 
+    <form method="post" action='https://anime-servey.org' id="survey-form"> 
     <!-- Personal Information Section -->
       <fieldset>
-        <label for="name">Name: <input id="name" name="name" type="text" required /></label>
-        <label for="email">Email: <input id="email" name="email" type="email" required /></label>
-        <label for="age">Age:<input id="age" name="age" type="number" min="0" max="123"></label>
+        <label for="name" id="name-label">Name: <input id="name" name="name" type="text" placeholder="Your name" required /></label>
+        <label for="email" id="email-label">Email: <input id="email" name="email" type="email" placeholder="abc.xyz@example.com" required /></label>
+        <label for="age" id="number-lable">Age:<input id="age" name="age" type="number" min="0" max="123" placeholder="1"></label>
         <label for="gender">Gender:
             <select id="gender" name="gender">
                 <option value="">(select one)</option>
@@ -35,27 +35,28 @@
       <!-- Anime Section -->
       <fieldset> 
         <label for="frequence">1. How often do you watch anime?</label>
-        <label for="Daily"><input id="daily" type="radio" name="frequencies" class="inline" /> Daily</label>
-        <label for="Weekly"><input id="weekly" type="radio" name="frequencies" class="inline" /> Weekly</label>
-        <label for="Monthly"><input id="monthly" type="radio" name="frequencies" class="inline" /> Monthly</label>
-        <label for="Rarely"><input id="rarely" type="radio" name="frequencies" class="inline" /> Rarely</label>
-        <label for="Never"><input id="never" type="radio" name="frequencies" class="inline" /> Never</label>
+        <label for="Daily"><input id="daily" type="radio" name="frequencies" class="inline" value="daily"/> Daily</label>
+        <label for="Weekly"><input id="weekly" type="radio" name="frequencies" class="inline" value="weekly"/> Weekly</label>
+        <label for="Monthly"><input id="monthly" type="radio" name="frequencies" class="inline" value="monthly"/> Monthly</label>
+        <label for="Rarely"><input id="rarely" type="radio" name="frequencies" class="inline" value="rarely"/> Rarely</label>
+        <label for="Never"><input id="never" type="radio" name="frequencies" class="inline" value="never"/> Never</label>
 
         <label for="anime-name"> 2. What is your all-time favorite anime series? <input id="anime-name" name="anime-name" type="text" required /></label>
 
-        <label for="genres"> 3. What genres of anime do you enjoy the most? (Select up to three)
+        <label for="genres"> 3. What genres of anime do you enjoy the most? (Select up to three)<br>
 
-            <input id="action" type="checkbox" required name="action" class="inline" /> Action
-            <input id="adventure" type="checkbox" required name="adventure" class="inline" />  Adventure
-            <input id="comedy" type="checkbox" required name="comedy" class="inline" />  Comedy
-            <input id="drama" type="checkbox" required name="drama" class="inline" /> Drama
-            <input id="fantasy" type="checkbox" required name="fantasy" class="inline" /> Fantasy
-            <input id="romance" type="checkbox" required name="romance" class="inline" /> Romance
-            <input id="sci-fi" type="checkbox" required name="sci-fi" class="inline" /> Sci-fi
-            <input id="slide-of-life" type="checkbox" required name="slide-of-life" class="inline" /> Slide-of-life
-            <input id="horror" type="checkbox" required name="horror" class="inline" /> Horror
-            <input id="mystery" type="checkbox" required name="mystery" class="inline" /> Mistery
-            <input id="other" type="checkbox" required name="other" class="inline" /> Other: _______________
+            <input id="action" type="checkbox" required name="action" class="inline" value=""/> Action
+            <input id="adventure" type="checkbox" required name="adventure" class="inline"  value="1"/>  Adventure
+            <input id="comedy" type="checkbox" required name="comedy" class="inline" value="2"/>  Comedy 
+            <input id="drama" type="checkbox" required name="drama" class="inline" value="3"/> Drama
+            <input id="fantasy" type="checkbox" required name="fantasy" class="inline" value="4"/> Fantasy<br>
+            <input id="romance" type="checkbox" required name="romance" class="inline" value="5"/> Romance
+            <input id="sci-fi" type="checkbox" required name="sci-fi" class="inline" value="6"/> Sci-fi
+            <input id="slide-of-life" type="checkbox" required name="slide-of-life" class="inline" value="7"/> Slide-of-life
+            <input id="horror" type="checkbox" required name="horror" class="inline" value="8"/> Horror
+            <input id="mystery" type="checkbox" required name="mystery" class="inline" value="9"/> Mistery <br>
+            <input id="other" type="checkbox" required name="other" class="inline" value="10"/> Other: _______________
+            
           </label>
 
         <label for="type"> 4. Do you prefer subbed or dubbed anime?
@@ -67,21 +68,20 @@
             </select>
 
         </label for="reference">5. Are there any specific anime series or movies that are your all-time favorite?
-            <textarea name="reference" id="reference" cols="30" rows="10" placeholder="Please list all of them"></textarea>
+            <textarea name="reference" id="reference" cols="30" rows="5" placeholder="Please list all of them"></textarea>
         <label >
         
         <label for="feature">6. What features or elements do you appreciate most in an anime series?
-            <textarea name="feature" id="feature" cols="30" rows="10" placeholder="e.g., character development, plot twists, animation quality"></textarea>
+            <textarea name="feature" id="feature" cols="30" rows="5" placeholder="e.g., character development, plot twists, animation quality"></textarea>
         </label>
 
         <label for="anything-else">7. Is there anything else you'd like to share about your anime preferences or recommendations for us?
-            <textarea name="anything-else" id="anything-else" cols="30" rows="10"></textarea>
+            <textarea name="anything-else" id="anything-else" cols="30" rows="5" placeholder="Share ore about your favorite anime"></textarea>
         </label>
       </fieldset>
-      <input type="submit" value="Submit" />
-      <p>Thank you for taking the time to complete our Anime Preferences Survey!</p>
-      <p>Your feedback is valuable to us.</p>
+      <input type="submit" id ="submit"value="Submit" />
     </form>
+    <p id="">Thank you for taking the time to complete our Anime Preferences Survey!<br>Your feedback is valuable to us.</p>
     </div>
   </body>
 </html>
