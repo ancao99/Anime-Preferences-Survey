@@ -16,5 +16,7 @@ To set up and deploy the survey website, follow these steps:
 Clone this repository to your local machine.
    ```bash
    git clone https://github.com/your-username/anime-preferences-survey.git
-## link
+
+## Link
+
 https://ancao99.github.io/Anime-Preferences-Survey/
