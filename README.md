@@ -9,6 +9,9 @@ This repository contains the code and assets for an anime preferences survey web
 - Questions about favorite anime genres, characters, and series.
 - Customizable and easy to deploy.
 
+## Link:
+ https://ancao99.github.io/Anime-Preferences-Survey/
+
 ## Usage
 
 To set up and deploy the survey website, follow these steps:
@@ -16,7 +19,3 @@ To set up and deploy the survey website, follow these steps:
 Clone this repository to your local machine.
    ```bash
    git clone https://github.com/your-username/anime-preferences-survey.git
-
-## Link
-
-https://ancao99.github.io/Anime-Preferences-Survey/
